@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="1_FormularioStackPanel/1_FormularioStackPanel.csproj" />
+  <Project Path="2_EquiposNBA/2_EquiposNBA.csproj" />
+  <Project Path="3_Mosaico/3_Mosaico.csproj" />
+  <Project Path="4_VisorImagenes/4_VisorImagenes.csproj" />
+  <Project Path="5_Calculadora/5_Calculadora.csproj" />
+  <Project Path="6_Estaciones/6_Estaciones.csproj" />
+  <Project Path="7_Formulario/7_Formulario.csproj" />
+</Solution>
