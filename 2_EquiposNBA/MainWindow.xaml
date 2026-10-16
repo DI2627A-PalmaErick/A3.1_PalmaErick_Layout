@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2_EquiposNBA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Icon="/Assets/basketball.ico"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResize"
+        Title="2_EquiposNBA" 
+        Height="450" Width="800">
 
-    </Grid>
+    <StackPanel Margin="15">
+        
+        <StackPanel Margin="40,60,0,0" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Image Source="/Assets/9_lakers.png" Height="100"/>
+            <Image Source="/Assets/14_lakers.png" Height="100"/>
+            <Image Source="/Assets/23_lakers.png" Height="100"/>
+            <Image Source="/Assets/3_lakers.png" Height="100"/>
+            <Image Source="/Assets/39_lakers.png" Height="100"/>
+        </StackPanel>
+
+        <StackPanel Margin="40,80,0,0" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Image Source="/Assets/7_heat.png" Height="100"/>
+            <Image Source="/Assets/14_heat.png" Height="100"/>
+            <Image Source="/Assets/22_heat.png" Height="100"/>
+            <Image Source="/Assets/99_heat.png" Height="100"/>
+            <Image Source="/Assets/13_heat.png" Height="100"/>
+        </StackPanel>
+    </StackPanel>
+    
 </Window>
