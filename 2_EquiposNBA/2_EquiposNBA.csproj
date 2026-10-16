@@ -11,10 +11,50 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\13_heat.png" />
+    <None Remove="Assets\14_heat.png" />
+    <None Remove="Assets\14_lakers.png" />
+    <None Remove="Assets\22_heat.png" />
+    <None Remove="Assets\23_lakers.png" />
+    <None Remove="Assets\39_lakers.png" />
+    <None Remove="Assets\3_lakers.png" />
+    <None Remove="Assets\7_heat.png" />
+    <None Remove="Assets\99_heat.png" />
+    <None Remove="Assets\9_lakers.png" />
     <None Remove="Assets\basketball.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\13_heat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\14_heat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\14_lakers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\22_heat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\23_lakers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\39_lakers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\3_lakers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\7_heat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\99_heat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\9_lakers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="basketball.ico" />
   </ItemGroup>
 
