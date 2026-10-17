@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3_Mosaico"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Icon="/Assets/mosaic.ico"
+        WindowStartupLocation="CenterScreen"
+        Title="Mosaico" 
+        Height="600" Width="600"
+        MinWidth="500" MinHeight="530">
 
-    </Grid>
+    <DockPanel LastChildFill="True">
+
+        <TextBlock DockPanel.Dock="Top" Text="" Background="Red" Height="100"/>
+        <TextBlock DockPanel.Dock="Left" Text="" Background="Red" Width="100"/>
+
+        <TextBlock DockPanel.Dock="Bottom" Text="" Background="DarkGreen" Height="100"/>
+        <TextBlock DockPanel.Dock="Right" Text="" Background="DarkGreen" Width="100"/>
+
+        <TextBlock DockPanel.Dock="Left" Text="" Background="Orange" Width="100"/>
+        <TextBlock DockPanel.Dock="Bottom" Text="" Background="Orange" Height="100"/>
+
+        <TextBlock DockPanel.Dock="Top" Text="" Background="DarkViolet" Height="100"/>
+        <TextBlock DockPanel.Dock="Right" Text="" Background="DarkViolet" Width="100"/>
+
+        <TextBlock Text="" Background="Black"/>
+
+    </DockPanel>
+
 </Window>

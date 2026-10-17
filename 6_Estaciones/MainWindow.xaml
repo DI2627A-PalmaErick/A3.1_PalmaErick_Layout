@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_6_Estaciones"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Icon="/Assets/sun.ico"
+        Title="Las 4 estaciones" 
+        ResizeMode="CanResize"
+        WindowStartupLocation="CenterScreen"
+        Height="450" Width="800">
 
-    </Grid>
+
+        <DockPanel LastChildFill="True" Background="Azure">
+
+            <TextBlock DockPanel.Dock="Top" Text="Las 4 estaciones" FontSize="28" FontWeight="Bold" FontFamily="Times New Roman"  HorizontalAlignment="Center" Margin="0,5,0,5">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="BlueViolet" Offset="0"/>
+                        <GradientStop Color="LightBlue" Offset="0.5"/>
+                        <GradientStop Color="DarkBlue" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+
+        <UniformGrid Rows="2" Columns="2" Margin="10">
+            <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" Margin="6">
+                <Image Source="/Assets/invierno.jpg" Stretch="None"/>
+            </ScrollViewer>
+            
+            <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" Margin="6">
+                <Image Source="/Assets/primavera.jpg" Stretch="None"/>
+            </ScrollViewer>
+
+            <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" Margin="6">
+                <Image Source="/Assets/verano.jpg" Stretch="None"/>
+            </ScrollViewer>
+
+            <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" Margin="6">
+                <Image Source="/Assets/otoño.jpg" Stretch="None"/>
+            </ScrollViewer>
+        </UniformGrid>
+
+    </DockPanel>
+
 </Window>

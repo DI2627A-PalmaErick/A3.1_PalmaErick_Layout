@@ -20,5 +20,11 @@ namespace _5_Calculadora
         {
             InitializeComponent();
         }
+
+        private void Boton_Click(object sender, RoutedEventArgs e)
+        {
+            Button botonPulsado = (Button)sender;
+            pantallaTextBlock.Text += botonPulsado.Tag.ToString();
+        }
     }
 }
