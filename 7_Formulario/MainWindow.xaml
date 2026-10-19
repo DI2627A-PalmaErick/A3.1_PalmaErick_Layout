@@ -5,8 +5,83 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_7_Formulario"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Icon="/Assets/form.ico"
+        WindowStartupLocation="CenterScreen"
+        Title="Formulario" 
+        Height="500" Width="700"
+        MinHeight="450" MinWidth="600">
 
-    </Grid>
+    <DockPanel Margin="10">
+        <TextBlock DockPanel.Dock="Top" Text="Formulario" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+        <DockPanel DockPanel.Dock="Bottom" Margin="0,10,0,0">
+            <TextBlock DockPanel.Dock="Left" Text="Erick Palma" FontSize="20" FontStyle="Italic" VerticalAlignment="Center"/>
+            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Aceptar" Width="80" Height="25" Margin="0,0,10,0"/>
+                <Button Content="Cancelar" Width="80" Height="25"/>
+            </StackPanel>
+        </DockPanel>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+
+                <Border Background="LightSkyBlue" BorderBrush="Black" BorderThickness="2" CornerRadius="5" Padding="8" Margin="0,0,0,10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Nombre" VerticalAlignment="Center" Margin="5"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" Height="22" Margin="5"/>
+                        <Image Grid.Row="0" Grid.Column="2" Source="/Assets/info.png" Width="18" Height="18" ToolTip="Introduce tu nombre completo" Margin="5"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Edad" VerticalAlignment="Center" Margin="5"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" Height="22" Margin="5"/>
+                        <Image Grid.Row="1" Grid.Column="2" Source="/Assets/info.png" Width="18" Height="18" ToolTip="Introduce tu edad en años" Margin="5"/>
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Dirección" VerticalAlignment="Center" Margin="5"/>
+                        <TextBox Grid.Row="2" Grid.Column="1" Height="22" Margin="5"/>
+                        <Image Grid.Row="2" Grid.Column="2" Source="/Assets/info.png" Width="18" Height="18" ToolTip="Introduce tu calle y número" Margin="5"/>
+                    </Grid>
+                </Border>
+
+                <Border Background="LightGray" BorderBrush="Black" BorderThickness="2" CornerRadius="5" Padding="10">
+                    <UniformGrid Columns="2">
+                        <GroupBox Header="Aficiones" Margin="5">
+                            <StackPanel Margin="5">
+                                <CheckBox Content="Hacer deporte" Margin="0,2"/>
+                                <CheckBox Content="Viajar" Margin="0,2"/>
+                                <CheckBox Content="Ver series" Margin="0,2"/>
+                                <CheckBox Content="Leer comics" Margin="0,2"/>
+                            </StackPanel>
+                        </GroupBox>
+
+                        <GroupBox Header="Estado civil" Margin="5">
+                            <StackPanel Margin="5">
+                                <RadioButton Content="Soltero" GroupName="civil" IsChecked="True" Margin="0,2"/>
+                                <RadioButton Content="Casado" GroupName="civil" Margin="0,2"/>
+                                <RadioButton Content="Divorciado" GroupName="civil" Margin="0,2"/>
+                                <RadioButton Content="Viudo" GroupName="civil" Margin="0,2"/>
+                            </StackPanel>
+                        </GroupBox>
+                    </UniformGrid>
+                </Border>
+            </StackPanel>
+
+            <Image Grid.Column="1" Source="/Assets/foto.jpg" Stretch="UniformToFill" Margin="10,0,0,0"/>
+        </Grid>
+    </DockPanel>
+
 </Window>

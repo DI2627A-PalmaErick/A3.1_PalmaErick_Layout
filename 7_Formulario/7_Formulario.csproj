@@ -12,10 +12,14 @@
 
   <ItemGroup>
     <None Remove="Assets\form.ico" />
+    <None Remove="Assets\foto.jpg" />
     <None Remove="Assets\info.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\foto.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="form.ico" />
   </ItemGroup>
 
